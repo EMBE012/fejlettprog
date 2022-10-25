@@ -1,4 +1,9 @@
 # Fejlett programozás - 1. zh help
+
+ ### Cool cucc, megadja a tömb méretét
+ ```c
+ int size = *(&arr + 1) - arr; // &arr returns a pointer 
+ ```
  ## BEVEZETÉS
  ### Osztály
  ```cpp
