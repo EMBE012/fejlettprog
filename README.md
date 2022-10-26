@@ -1,5 +1,15 @@
 # Fejlett programozás - 1. zh help
+ ### Bináris operátor, bal és jobboldal beállításával
+ ```cpp
 
+    template<size_t L>
+    container& operator += (const container<T,L>& c){
+        for (size_t i = 0; i < c.letarolt_elem; i++){
+            *this += c[i];
+        }
+        return *this;
+    }
+ ```
  ### Cool cucc, megadja a tömb méretét
  ```c
  int size = *(&arr + 1) - arr; // &arr returns a pointer 
